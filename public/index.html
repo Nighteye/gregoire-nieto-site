@@ -1,13 +1,117 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gregoire Nieto</title>
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-neutral text-primary">
-  <h1 class="text-4xl font-sans">Bonjour, je suis Grégoire</h1>
-  <!-- ton contenu -->
-</body>
+<html lang="fr" data-theme="prodev">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gregoire Nieto</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Code</a></li>
+            <li>
+              <a>Design</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Recherche</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Grégoire Nieto</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Code</a></li>
+          <li>
+            <details>
+              <summary>Design</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Recherche</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Contact</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero min-h-[60vh] bg-base-200">
+      <div class="hero-content text-center px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md">
+          <h1 class="text-4xl sm:text-5xl font-bold">
+            Développeur / Graphiste
+          </h1>
+          <p class="py-4">
+            Je crée des sites web modernes et des designs élégants.
+          </p>
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- À propos -->
+    <section id="about" class="px-4 sm:px-6 lg:px-8 py-12">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">À propos de moi</h2>
+        <p class="leading-relaxed">
+          Je suis développeur web, designer et chercheur avec une passion pour
+          ...
+        </p>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects" class="px-4 sm:px-6 lg:px-8 py-12">
+      <h2 class="text-3xl font-semibold text-center mb-8">Mes Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title">Projet 1</h3>
+            <p>Une description de mon projet.</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-secondary">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <!-- Répète d'autres cards selon tes projets -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-base-200 px-4 sm:px-6 lg:px-8 py-8">
+      <div class="footer-center">
+        <p>© 2025 Grégoire Nieto — Tous droits réservés</p>
+      </div>
+    </footer>
+  </body>
 </html>
